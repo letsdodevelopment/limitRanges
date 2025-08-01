@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"kind":"ResourceQuota","apiVersion":"v1","metadata":{"name":"myquota","creationTimestamp":null},"spec":{"hard":{"limits.cpu":"750m","requests.cpu":"500m"}},"status":{}}
+  creationTimestamp: "2025-07-31T14:23:21Z"
+  name: myquota
+  namespace: selfservice-ranges
+  uid: f01d57b1-dfa2-48c1-b07f-dbd4fdc20a25
+spec:
+  hard:
+    limits.cpu: 750m
+    requests.cpu: 500m
+status: {}
